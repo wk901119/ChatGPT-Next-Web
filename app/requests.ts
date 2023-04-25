@@ -85,7 +85,7 @@ export async function requestChat(
     model: options?.model,
   });
 
-  const res = await requestOpenaiClient("v1/chat/completions")(req);
+  const res = await requestOpenaiClient("chat/completions")(req);
 
   try {
     const response = (await res.json()) as ChatResponse;
