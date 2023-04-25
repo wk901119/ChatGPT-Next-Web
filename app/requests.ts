@@ -172,7 +172,7 @@ export async function requestChatStream(
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        path: "v1/chat/completions",
+        path: "/v1/completions",
         ...getHeaders(),
       },
       body: JSON.stringify(req),
